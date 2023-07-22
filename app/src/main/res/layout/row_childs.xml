@@ -15,6 +15,7 @@
             android:id="@+id/tv_dis"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="10dp"
             android:layout_margin="10dp"
             android:background="@color/white"
             android:translationZ="10dp" />

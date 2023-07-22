@@ -42,6 +42,13 @@ public class ParentsAdapter extends RecyclerView.Adapter<ParentsAdapter.ViewHold
 
         holder.binding.expendable.setVisibility(isExpendable ? View.VISIBLE : View.GONE);
 
+        if (isExpendable){
+            holder.binding.arrow.setImageResource(R.drawable.arrow_up);
+        }else {
+            holder.binding.arrow.setImageResource(R.drawable.arrow_down);
+
+        }
+
         ChildAdapter childAdapter = new ChildAdapter(nList, context);
         holder.binding.childRecyclerView.setLayoutManager(new LinearLayoutManager(holder.itemView.getContext()));
         holder.binding.childRecyclerView.setAdapter(childAdapter);
